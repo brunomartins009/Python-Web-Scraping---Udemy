@@ -1,0 +1,18 @@
+-- insert into `agenda`.`contatos` (`nome`, `telefone`, `celular`) values ('Pato Donald', '(11)1234-1234', '(11)91234-1234');
+-- insert into `agenda`.`contatos` (`nome`, `telefone`, `celular`) values ('Mickey Mouse', '(11)1111-1111', '(11)91111-1111');
+-- insert into `agenda`.`contatos` (`nome`, `telefone`, `celular`) values ('Pluto', '(11)2222-2222', '(11)92222-2222');
+-- insert into `agenda`.`contatos` (`nome`, `telefone`) values ('Minie', '(11)3333-3333');
+-- insert into `agenda`.`contatos` (`nome`, `celular`) values ('Tio Patinhas', '(11)94444-4444');
+-- insert into `agenda`.`contatos` (`nome`, `telefone`, `celular`) values ('Margarida', '(11)5555-5555', '(11)95555-5555');
+-- insert into `agenda`.`contatos` (`nome`, `telefone`, `celular`) values ('Cascão', '(11)6666-6666', '(11)96666-6666');
+-- insert into `agenda`.`contatos` (`nome`, `telefone`, `celular`) values ('Cebolinha', '(11)7777-7777', '(11)97777-7777');
+-- insert into `agenda`.`contatos` (`nome`, `telefone`, `celular`) values ('Mônica', '(11)8888-8888', '(11)98888-8888');
+-- insert into `agenda`.`contatos` (`nome`, `telefone`, `celular`) values ('Magali', '(11)9999-9999', '(11)99999-9999');
+-- select * from agenda.contatos
+-- insert into agenda.contatos (nome, telefone, celular) values ('Franjinha', '(11)0101-0101', '(11)90101-0101');
+-- select * from agenda.contatos where id='Mônica'
+-- select * from agenda.contatos where nome like 'M%' -- retorna todos contatos que iniciem com a letra 'M'
+-- select * from agenda.contatos where celular is not null and nome like 'M%' -- retorna as linhas em que as duas condições são satisfeitas
+-- select * from agenda.contatos where (celular is not null and nome like 'M%') or (nome like '%Donald') -- retorna as linhas em que pelo menos uma das duas condições é satisfeita
+-- update agenda.contatos set celular ='(21)12345-1111' where id=10 -- atualiza o celular do id = 10, usar sempre com where para especificar bem qual deve ser alterado, caso contrario vai alterar todos os celulares da tabela
+-- delete from agenda.contatos where telefone="(11)5555-5555" -- deleta uma linha completa, que é informada por meio do where
